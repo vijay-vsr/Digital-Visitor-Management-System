@@ -55,6 +55,17 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+// Serve static frontend if client/dist exists (Production deployment)
+const fs = require('fs');
+const clientDist = path.join(__dirname, '../client/dist');
+if (fs.existsSync(clientDist)) {
+  app.use(express.static(clientDist));
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api')) return next();
+    res.sendFile(path.join(clientDist, 'index.html'));
+  });
+}
+
 // Centralized Error Handling
 app.use(errorHandler);
 
