@@ -2,6 +2,9 @@
 
 A complete, modern, full-stack web application for corporate and office visitor reception, badge pass generation, security check-in/check-out, employee host directory, and administrative reporting.
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/vijay-vsr/Digital-Visitor-Management-System)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vijay-vsr/Digital-Visitor-Management-System)
+
 ---
 
 ## 📌 Project Overview
